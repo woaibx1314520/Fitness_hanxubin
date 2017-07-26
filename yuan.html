@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+    /* canvas{
+     	background-color: yellow;
+     }*/
+	</style>
+</head>
+<body>
+  <canvas id="d1" width="400" height="400"></canvas>
+  <script>
+   var a = document.getElementById('d1');
+   var b = a.getContext("2d");
+
+   b.beginPath();
+   b.strokeStyle="yellow";
+   b.lineWidth=15;
+   b.arc(200,200,100,2.7,4.7,false);
+   b.stroke();
+
+   b.beginPath();
+   b.strokeStyle="green";
+   b.lineWidth=15;
+   b.arc(200,200,100,4.7,0.5,false);
+   b.stroke();
+
+   b.beginPath();
+   b.strokeStyle="red";
+   b.lineWidth=15;
+   b.arc(200,200,100,0.5,2.7,false);
+   b.stroke();
+   
+   </script>
+</body>
+</html>
